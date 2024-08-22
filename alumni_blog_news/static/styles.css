@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to a more modern font */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set a default text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #222; /* Slightly darker for a modern look */
+    color: #fff;
+    padding: 15px 0; /* Added more padding for better spacing */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size for prominence */
+    letter-spacing: 1px; /* Added letter spacing for a cleaner look */
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1200px; /* Increased max-width for a more spacious layout */
+    margin: 30px auto; /* Adjusted margin for better spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Increased border radius for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    text-align: center; /* Center text in sections */
+}
+
+h2 {
+    font-size: 24px; /* Consistent header size */
+    margin-bottom: 20px;
+    color: #333; /* Darker color for headers */
+}
+
+/* Card Styles */
+.blog-list, .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+.blog-item, .news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px; /* Increased padding for more spacious content */
+    width: 300px; /* Fixed width for cards */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    text-align: left; /* Align text to the left inside the card */
+}
+
+.blog-item:hover, .news-item:hover {
+    background-color: #e9ecef; /* Light hover effect */
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.blog-item h3, .news-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px; /* Size for card titles */
+}
+
+.blog-item p, .news-item p {
+    margin: 0;
+    color: #555; /* Lighter color for card text */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px; /* Increased border radius for buttons */
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for buttons */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+form {
+    margin-top: 30px; /* Increased margin for spacing */
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+textarea {
+    height: 120px; /* Increased height for better usability */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 20px; /* Added padding for consistency */
+    border-radius: 6px;
+    font-size: 16px; /* Consistent font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Error Messages */
+.error {
+    color: #d9534f; /* Changed to a more noticeable red */
+    margin-bottom: 20px;
+    font-size: 16px; /* Increased font size for better visibility */
+}
+
+/* List and Link Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Blog Detail Card Styles */
+.blog-detail-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Limit the width for readability */
+    margin: 20px auto; /* Center the card */
+    text-align: left; /* Align text to the left inside the card */
+}
+
+.blog-detail-card h1 {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+    color: #333; /* Darker color for the title */
+}
+
+.blog-detail-card p {
+    margin: 0 0 15px 0;
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Slightly lighter color for content */
+}
+
+.blog-detail-card em {
+    color: #777; /* Lighter color for meta information */
+    font-style: normal; /* Normal style for better readability */
+}
+
+/* Card List Styles */
+.card {
+    position: relative;
+    overflow: hidden; /* Hide overflow to crop image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Ensure consistent background */
+    padding: 15px; /* Add padding for content */
+    margin-bottom: 20px;
+    width: 100%; /* Full width of the container */
+    max-width: 300px; /* Maximum width for cards */
+}
+
+.card-image {
+    width: 100%; /* Make sure the image fills the container */
+    height: 200px; /* Set the desired height for cropping */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-bottom: 2px solid #ddd; /* Optional: border for separation */
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.card-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width of the container */
+    max-width: 300px; /* Fixed width for all cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Space out the content and link */
+    margin: auto; /* Center each card within its grid cell */
+}
+
+.card-content {
+    padding: 20px; /* Padding for the content section */
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+.card-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for titles */
+}
+
+.card-item p {
+    flex-grow: 1; /* Allow the content to take up available space */
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter color for content */
+}
+
+.card-item a {
+    color: #007bff;
+}
+
+.delete-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button:hover {
+    color: #c9302c;
+    background-color: #f1f1f1;
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more:hover {
+    color: #0056b3;
+    background-color: #f1f1f1;
+}
